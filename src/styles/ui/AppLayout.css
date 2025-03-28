@@ -7,4 +7,5 @@
 .layout-container main {
   grid-column: 2/3;
   background-color: #f7f7fb;
+  padding: 32px;
 }/*# sourceMappingURL=AppLayout.css.map */

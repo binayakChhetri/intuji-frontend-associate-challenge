@@ -8,6 +8,8 @@ import Schedule from "./pages/Schedule";
 import Settings from "./pages/Settings";
 import Team from "./pages/Team";
 import PageNotFound from "./pages/PageNotFound";
+import Profile from "./pages/Profile";
+import Help from "./pages/Help";
 
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
           <Route path="schedule" element={<Schedule />} />
           <Route path="settings" element={<Settings />} />
           <Route path="team" element={<Team />} />
+          <Route path="profile" element={<Profile />} />
+          <Route path="help" element={<Help />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
