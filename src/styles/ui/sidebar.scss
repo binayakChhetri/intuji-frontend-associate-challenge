@@ -1,0 +1,5 @@
+@import "../variables/variables.scss";
+aside {
+  background-color: $primaryBg;
+  grid-column: 1/2;
+}

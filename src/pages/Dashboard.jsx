@@ -1,3 +1,5 @@
+import "../styles/pages/Dashboard.css";
+
 const Dashboard = () => {
   return <div>Dashboard</div>;
 };

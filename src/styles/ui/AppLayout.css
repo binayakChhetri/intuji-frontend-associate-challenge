@@ -1,12 +1,10 @@
-@import "../variables/variables.scss";
 .layout-container {
   display: grid;
   grid-template-columns: 280px 1fr;
   grid-template-rows: 1fr;
   height: 100vh;
-
-  main {
-    grid-column: 2/3;
-    background-color: $secondaryBg;
-  }
 }
+.layout-container main {
+  grid-column: 2/3;
+  background-color: #f7f7fb;
+}/*# sourceMappingURL=AppLayout.css.map */
