@@ -10,6 +10,7 @@ import Team from "./pages/Team";
 import PageNotFound from "./pages/PageNotFound";
 import Profile from "./pages/Profile";
 import Help from "./pages/Help";
+import Logout from "./pages/Logout";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="team" element={<Team />} />
           <Route path="profile" element={<Profile />} />
           <Route path="help" element={<Help />} />
+          <Route path="logout" element={<Logout />} />
         </Route>
         <Route path="*" element={<PageNotFound />} />
       </Routes>
