@@ -1,5 +1,6 @@
+import "../styles/ui/SavingPlanCard.css";
 const SavingPlanCard = () => {
-  return <div>SavingPlanCard</div>;
+  return <div className="saving-plan-card card">SavingPlanCard</div>;
 };
 
 export default SavingPlanCard;

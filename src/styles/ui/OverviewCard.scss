@@ -1,0 +1,82 @@
+@import "../variables/variables.scss";
+.overview-card {
+  grid-area: item1;
+  background-color: $primaryBg;
+  max-width: 717px;
+  border-radius: 14px;
+  padding: 16px;
+
+  .title {
+    font-size: 20px;
+    font-weight: 700;
+    color: $primaryTextColor;
+    margin-bottom: 24px;
+  }
+
+  .overview-card-content {
+    // background-color: bisque;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .divider {
+    margin: 21.25px 0;
+    border: none;
+    border-top: 1.5px solid #0d163a20;
+  }
+
+  .content {
+    background-color: $primaryBg;
+    border: 1px solid #dedede70;
+    border-radius: 14px;
+    padding: 18.2px;
+    color: $primaryTextColor;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      scale: 1.02;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.03);
+    }
+
+    .logo-title {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+
+      .title-description p:first-child {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 9px;
+      }
+      .description {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 12px;
+        opacity: 0.6;
+      }
+    }
+    .amount {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 28px;
+      font-weight: 600;
+    }
+  }
+
+  .blc-content {
+    background-color: $purpleColor;
+    color: $primaryBg;
+
+    .description {
+      color: #ffffff60;
+    }
+    .divider {
+      border-top: 1.5px solid #ffffff20;
+    }
+  }
+}

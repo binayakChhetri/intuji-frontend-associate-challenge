@@ -1,5 +1,6 @@
+import "../styles/ui/AnalyticsCard.css";
 const AnalyticsCard = () => {
-  return <div>AnalyticsCard</div>;
+  return <div className="analytics-card card">AnalyticsCard</div>;
 };
 
 export default AnalyticsCard;
