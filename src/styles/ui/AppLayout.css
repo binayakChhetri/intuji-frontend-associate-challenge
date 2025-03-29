@@ -2,7 +2,8 @@
 .layout-container {
   display: grid;
   grid-template-columns: 280px 1fr;
-  height: 100vh;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: #f7f7fb;
 }
 .layout-container main {

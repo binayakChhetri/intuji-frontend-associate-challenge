@@ -2,4 +2,12 @@
   display: flex;
   justify-content: space-between;
   gap: 24px;
+}
+
+.dashboard-body {
+  display: grid;
+  grid-template-columns: 717px 347px;
+  grid-template-rows: 430px 402px;
+  gap: 32px;
+  margin-top: 32px;
 }/*# sourceMappingURL=Dashboard.css.map */
