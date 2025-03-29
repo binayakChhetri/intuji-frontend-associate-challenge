@@ -3,12 +3,13 @@
 .layout-container {
   display: grid;
   grid-template-columns: 280px 1fr;
-  grid-template-rows: 1fr;
   height: 100vh;
+  background-color: $secondaryBg;
 
   main {
-    grid-column: 2/3;
-    background-color: $secondaryBg;
+    width: 100%;
     padding: 32px;
+    max-width: 1160px;
+    margin: 0 auto;
   }
 }

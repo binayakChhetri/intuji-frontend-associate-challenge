@@ -1,1 +1,5 @@
-/*# sourceMappingURL=dashboard.css.map */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}/*# sourceMappingURL=Dashboard.css.map */

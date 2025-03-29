@@ -1,0 +1,6 @@
+@import "../variables/variables.scss";
+
+@mixin contentContainer {
+  border-radius: 100px;
+  background-color: $primaryBg;
+}
