@@ -97,7 +97,7 @@ const sidebarLinks3 = [
 ];
 
 export const Sidebar = () => {
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState("dashboard");
   return (
     <aside>
       <div className="logo-container">

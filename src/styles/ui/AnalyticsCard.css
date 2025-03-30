@@ -1,5 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 .analytics-card {
   grid-area: item3;
-  background-color: cadetblue;
   max-width: 717px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  color: #0d163a;
+}
+.analytics-card .analytics-header {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.analytics-card .analytics-header .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.analytics-card .analytics-header .label-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.analytics-card .analytics-header .label-dropdown .label-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.analytics-card .analytics-header .label-dropdown .label-container .label > img {
+  margin-right: 12px;
+}
+.analytics-card .analytics-header .label-dropdown .label-container .label > span {
+  font-size: 14px;
+  font-weight: 500;
+}
+.analytics-card .analytics-header .label-dropdown .dropdown-container {
+  border-radius: 8px;
+  padding: 7.2px;
+  color: #7c7c7c;
+  cursor: pointer;
+  border: 1px solid #dedede;
+  font-size: 14px;
+}
+.analytics-card .analytics-header .label-dropdown .dropdown-container > select {
+  border: none;
+  color: inherit;
+  font-size: inherit;
+  padding-right: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.analytics-card .custom-tooltip {
+  background-color: #ffffff;
+  width: 200px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.analytics-card .custom-tooltip > p:last-child {
+  color: #f8cd70;
+}
+.analytics-card .custom-tooltip > p:nth-child(2) {
+  color: #4745a4;
 }/*# sourceMappingURL=AnalyticsCard.css.map */

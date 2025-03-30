@@ -1,5 +1,81 @@
+@import "../variables//variables.scss";
+
 .analytics-card {
   grid-area: item3;
-  background-color: cadetblue;
   max-width: 717px;
+  padding: 20px;
+
+  background-color: $primaryBg;
+  border-radius: 14px;
+  color: $primaryTextColor;
+
+  .analytics-header {
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .label-dropdown {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+
+      .label-container {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+
+        .label > img {
+          margin-right: 12px;
+        }
+
+        .label > span {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+
+      .dropdown-container {
+        border-radius: 8px;
+        padding: 7.2px;
+        color: #7c7c7c;
+        cursor: pointer;
+        border: 1px solid #dedede;
+        font-size: 14px;
+      }
+
+      .dropdown-container > select {
+        border: none;
+        color: inherit;
+        font-size: inherit;
+        padding-right: 5px;
+        cursor: pointer;
+        outline: none;
+      }
+    }
+  }
+  .custom-tooltip {
+    background-color: #ffffff;
+    width: 200px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    color: #333;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .custom-tooltip > p:last-child {
+    color: #f8cd70;
+  }
+  .custom-tooltip > p:nth-child(2) {
+    color: #4745a4;
+  }
 }
