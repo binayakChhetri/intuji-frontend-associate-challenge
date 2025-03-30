@@ -1,5 +1,5 @@
 .dashboard-container {
-  max-width: 1160px;
+  max-width: 1088px;
   margin: 0 auto;
 }
 
@@ -18,4 +18,30 @@
     "item3 item4";
   gap: 32px;
   margin-top: 32px;
+}
+
+@media (max-width: 500px) {
+  .dashboard-body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3"
+      "item4";
+  }
+}
+@media (max-width: 800px) {
+  .dashboard-body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "item1 item2"
+      "item3 item3"
+      "item4 item4";
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-header {
+    flex-direction: column;
+  }
 }

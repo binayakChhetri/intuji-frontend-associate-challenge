@@ -66,3 +66,14 @@ aside {
 .nav-items:last-child {
   margin-top: 232px;
 }
+
+@media (max-width: 600px) {
+  .nav-title,
+  aside > .logo-container {
+    display: none;
+  }
+
+  .nav-items > .nav-link {
+    padding: 12px 0 12px 20px;
+  }
+}

@@ -13,3 +13,9 @@
     padding: 32px;
   }
 }
+
+@media (max-width: 600px) {
+  .layout-container {
+    grid-template-columns: 80px 1fr;
+  }
+}

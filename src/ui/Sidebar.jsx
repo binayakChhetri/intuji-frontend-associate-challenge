@@ -115,7 +115,7 @@ export const Sidebar = () => {
               onClick={() => setActiveLink(link.id)}
             >
               {activeLink === link.id ? link.icon.active : link.icon.default}
-              <span>{link.title}</span>
+              <span className="nav-title">{link.title}</span>
             </NavLink>
           ))}
         </div>
@@ -131,7 +131,7 @@ export const Sidebar = () => {
               onClick={() => setActiveLink(link.id)}
             >
               {activeLink === link.id ? link.icon.active : link.icon.default}
-              <span>{link.title}</span>
+              <span className="nav-title">{link.title}</span>
             </NavLink>
           ))}
         </div>
@@ -146,7 +146,7 @@ export const Sidebar = () => {
               onClick={() => setActiveLink(link.id)}
             >
               {activeLink === link.id ? link.icon.active : link.icon.default}
-              <span>{link.title}</span>
+              <span className="nav-title">{link.title}</span>
             </NavLink>
           ))}
         </div>

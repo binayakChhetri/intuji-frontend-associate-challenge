@@ -15,6 +15,7 @@
 .transaction-card .transaction-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .transaction-card .transaction-header .title {
   font-size: 20px;
