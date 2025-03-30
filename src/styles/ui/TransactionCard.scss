@@ -1,5 +1,87 @@
+@import "../variables//variables.scss";
 .transaction-card {
   grid-area: item4;
-  background-color: lightcoral;
   max-width: 347px;
+
+  // Common styles with savingplan card
+  background-color: $primaryBg;
+  padding: 16px;
+  border-radius: 14px;
+  color: $primaryTextColor;
+
+  //  Common styles with savingplan card
+  .divider {
+    margin: 24px 0;
+    border: none;
+    border-top: 1.5px solid #0d163a10;
+  }
+
+  // Common styles with savingplan card
+  .transaction-header {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    span {
+      color: $purpleColor;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+
+  .transaction-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3.75px;
+
+      .logo-title-date {
+        display: flex;
+
+        .title-date > p {
+          font-weight: 600;
+          font-size: 18px;
+        }
+
+        .title-date > span {
+          font-size: 12px;
+          color: #0d163a50;
+          font-weight: 600;
+        }
+      }
+
+      // This style maybe moved to the mixin file
+      .logo {
+        width: 48px;
+        height: 48px;
+        background-color: #00000020;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 8px;
+      }
+
+      .amount-status {
+        font-weight: 600;
+
+        p {
+          font-size: 18px;
+        }
+        span {
+          font-size: 12px;
+          color: #3bbb6e;
+        }
+      }
+    }
+  }
 }

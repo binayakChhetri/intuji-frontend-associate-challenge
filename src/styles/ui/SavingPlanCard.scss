@@ -2,13 +2,15 @@
 @import "../mixins/mixin.scss";
 .savingplan-card {
   grid-area: item2;
-  background-color: $primaryBg;
   max-width: 347px;
 
-  border-radius: 14px;
+  // Common styles with transaction card
+  background-color: $primaryBg;
   padding: 16px;
+  border-radius: 14px;
   color: $primaryTextColor;
 
+  // Common styles with transaction card
   .divider {
     margin: 24px 0;
     border: none;
@@ -26,6 +28,7 @@
     span {
       color: $purpleColor;
       font-weight: 500;
+      cursor: pointer;
     }
   }
 
