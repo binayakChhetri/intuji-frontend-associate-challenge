@@ -1,5 +1,108 @@
-.saving-plan-card {
+@import "../variables//variables.scss";
+@import "../mixins/mixin.scss";
+.savingplan-card {
   grid-area: item2;
-  background-color: bisque;
+  background-color: $primaryBg;
   max-width: 347px;
+
+  border-radius: 14px;
+  padding: 16px;
+  color: $primaryTextColor;
+
+  .divider {
+    margin: 24px 0;
+    border: none;
+    border-top: 1.5px solid #0d163a10;
+  }
+
+  .savingplan-header {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-size: 20px;
+      font-weight: 700;
+    }
+    span {
+      color: $purpleColor;
+      font-weight: 500;
+    }
+  }
+
+  .savingplan-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .content {
+      padding: 8px;
+
+      .content-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 14px;
+        p {
+          font-weight: 500;
+        }
+        span {
+          font-size: 12px;
+          color: #0d163a60;
+        }
+      }
+
+      .target-percent {
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+
+        .saved-amt {
+          font-size: 20px;
+          font-weight: 600;
+        }
+        .total-amt {
+          font-weight: 600;
+          font-size: 12px;
+          color: #0d163a50;
+        }
+
+        // Dynamic styling is necesary here
+        .saved-percent {
+          font-weight: 600;
+          font-size: 18px;
+        }
+      }
+
+      .progress-container {
+        height: 8px;
+        background-color: #dedede;
+        border-radius: 5px;
+
+        .progress-bar {
+          border-radius: 5px;
+          width: 48%;
+          height: 100%;
+        }
+      }
+    }
+
+    .bali {
+      @include progressPercent(48%, $purpleColor);
+    }
+    .saved-percent-bali {
+      color: $purpleColor;
+    }
+    .gadget {
+      @include progressPercent(79%, $activeNavIconColor);
+    }
+    .saved-percent-gadget {
+      color: #dd9802;
+    }
+    .charity {
+      @include progressPercent(32%, #3bbb6e);
+    }
+    .saved-percent-charity {
+      color: #3bbb6e;
+    }
+  }
 }

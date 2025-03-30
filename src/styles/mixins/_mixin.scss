@@ -4,3 +4,8 @@
   border-radius: 100px;
   background-color: $primaryBg;
 }
+
+@mixin progressPercent($width, $color) {
+  background-color: $color;
+  width: $width;
+}

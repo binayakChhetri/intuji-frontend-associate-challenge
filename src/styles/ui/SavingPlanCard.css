@@ -1,5 +1,97 @@
-.saving-plan-card {
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.savingplan-card {
   grid-area: item2;
-  background-color: bisque;
+  background-color: #ffffff;
   max-width: 347px;
+  border-radius: 14px;
+  padding: 16px;
+  color: #0d163a;
+}
+.savingplan-card .divider {
+  margin: 24px 0;
+  border: none;
+  border-top: 1.5px solid rgba(13, 22, 58, 0.062745098);
+}
+.savingplan-card .savingplan-header {
+  display: flex;
+  justify-content: space-between;
+}
+.savingplan-card .savingplan-header .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.savingplan-card .savingplan-header span {
+  color: #4745a4;
+  font-weight: 500;
+}
+.savingplan-card .savingplan-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.savingplan-card .savingplan-card-content .content {
+  padding: 8px;
+}
+.savingplan-card .savingplan-card-content .content .content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+.savingplan-card .savingplan-card-content .content .content-header p {
+  font-weight: 500;
+}
+.savingplan-card .savingplan-card-content .content .content-header span {
+  font-size: 12px;
+  color: rgba(13, 22, 58, 0.3764705882);
+}
+.savingplan-card .savingplan-card-content .content .target-percent {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.savingplan-card .savingplan-card-content .content .target-percent .saved-amt {
+  font-size: 20px;
+  font-weight: 600;
+}
+.savingplan-card .savingplan-card-content .content .target-percent .total-amt {
+  font-weight: 600;
+  font-size: 12px;
+  color: rgba(13, 22, 58, 0.3137254902);
+}
+.savingplan-card .savingplan-card-content .content .target-percent .saved-percent {
+  font-weight: 600;
+  font-size: 18px;
+}
+.savingplan-card .savingplan-card-content .content .progress-container {
+  height: 8px;
+  background-color: #dedede;
+  border-radius: 5px;
+}
+.savingplan-card .savingplan-card-content .content .progress-container .progress-bar {
+  border-radius: 5px;
+  width: 48%;
+  height: 100%;
+}
+.savingplan-card .savingplan-card-content .bali {
+  background-color: #4745a4;
+  width: 48%;
+}
+.savingplan-card .savingplan-card-content .saved-percent-bali {
+  color: #4745a4;
+}
+.savingplan-card .savingplan-card-content .gadget {
+  background-color: #f9ba33;
+  width: 79%;
+}
+.savingplan-card .savingplan-card-content .saved-percent-gadget {
+  color: #dd9802;
+}
+.savingplan-card .savingplan-card-content .charity {
+  background-color: #3bbb6e;
+  width: 32%;
+}
+.savingplan-card .savingplan-card-content .saved-percent-charity {
+  color: #3bbb6e;
 }/*# sourceMappingURL=SavingPlanCard.css.map */
