@@ -23,4 +23,4 @@ This project is a finance dashboard application developed as part of the fronten
 
 # Live Demo
 You can view the live demo of the project hosted on Netlify here:
-[Link] (https://intuji-associate-challenge.netlify.app "Click to visit")
+[Link](https://intuji-associate-challenge.netlify.app)
