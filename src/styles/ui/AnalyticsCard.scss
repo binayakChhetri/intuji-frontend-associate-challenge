@@ -9,6 +9,13 @@
   border-radius: 14px;
   color: $primaryTextColor;
 
+  .chart-container {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 24px;
+    position: relative;
+  }
+
   .analytics-header {
     margin-bottom: 24px;
     display: flex;
@@ -79,3 +86,23 @@
     color: #4745a4;
   }
 }
+
+@media (max-width: 550px) {
+  .analytics-header {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+
+    .label-dropdown {
+      flex-direction: column;
+      gap: 0px;
+    }
+  }
+}
+
+// @media (max-width: 410px) {
+//   .label-container {
+//     flex-direction: column;
+//   }
+// }

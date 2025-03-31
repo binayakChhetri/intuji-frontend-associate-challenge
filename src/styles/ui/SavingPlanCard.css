@@ -100,4 +100,9 @@
   .savingplan-card {
     max-width: 100%;
   }
+}
+@media (min-width: 1088px) and (max-width: 1250px) {
+  .content-header {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=SavingPlanCard.css.map */

@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import "../styles/ui/AnalyticsCard.css";
 import label1 from "../assets/label1.svg";
 import label2 from "../assets/label2.svg";
@@ -20,9 +21,24 @@ const data = [
   { label: "Fri", label1: 20000, label2: 7000 },
   { label: "Sat", label1: 17000, label2: 9200 },
 ];
-const LineChart = () => {
+const Chart = () => {
+  const [height, setHeight] = useState("80%");
+  const handleResize = () => {
+    setHeight(window.innerWidth <= 550 ? "50%" : "80%");
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, [handleResize]);
+
   return (
-    <ResponsiveContainer width="100%" height="80%">
+    <ResponsiveContainer
+      width="100%"
+      height={height}
+      className="chart-container"
+    >
       <AreaChart
         data={data}
         margin={{
@@ -124,7 +140,7 @@ const AnalyticsCard = () => {
           </div>
         </div>
       </div>
-      <LineChart />
+      <Chart />
     </div>
   );
 };
