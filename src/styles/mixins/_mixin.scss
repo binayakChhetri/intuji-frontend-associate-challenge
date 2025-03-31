@@ -5,6 +5,35 @@
   background-color: $primaryBg;
 }
 
+@mixin cardStyle() {
+  background-color: $primaryBg;
+  padding: 16px;
+  border-radius: 14px;
+  color: $primaryTextColor;
+
+  // border-radius: 14px;
+  // padding: 16px;
+  // background-color: $primaryBg;
+  // color: $primaryTextColor;
+}
+
+@mixin cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin cardTitle {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@mixin dividerStyle {
+  margin: 24px 0;
+  border: none;
+  border-top: 1.5px solid #0d163a10;
+}
+
 @mixin progressPercent($width, $color) {
   background-color: $color;
   width: $width;

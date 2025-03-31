@@ -85,4 +85,12 @@
     flex-direction: column;
     gap: 0px;
   }
+  .analytics-card .custom-tooltip {
+    background-color: #ffffff;
+    gap: 4px;
+    font-size: 9px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 5px;
+  }
 }/*# sourceMappingURL=AnalyticsCard.css.map */

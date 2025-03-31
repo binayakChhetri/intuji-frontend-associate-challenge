@@ -1,30 +1,18 @@
 @import "../variables//variables.scss";
+@import "../mixins/mixin.scss";
 .transaction-card {
   grid-area: item4;
   max-width: 347px;
 
-  // Common styles with savingplan card
-  background-color: $primaryBg;
-  padding: 16px;
-  border-radius: 14px;
-  color: $primaryTextColor;
-
-  //  Common styles with savingplan card
+  @include cardStyle;
   .divider {
-    margin: 24px 0;
-    border: none;
-    border-top: 1.5px solid #0d163a10;
+    @include dividerStyle;
   }
 
-  // Common styles with savingplan card
   .transaction-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    @include cardHeader;
     .title {
-      font-size: 20px;
-      font-weight: 700;
+      @include cardTitle;
     }
 
     span {
@@ -65,7 +53,6 @@
         }
       }
 
-      // This style maybe moved to the mixin file
       .logo {
         width: 48px;
         height: 48px;

@@ -4,26 +4,15 @@
   grid-area: item2;
   max-width: 347px;
 
-  // Common styles with transaction card
-  background-color: $primaryBg;
-  padding: 16px;
-  border-radius: 14px;
-  color: $primaryTextColor;
-
-  // Common styles with transaction card
+  @include cardStyle;
   .divider {
-    margin: 24px 0;
-    border: none;
-    border-top: 1.5px solid #0d163a10;
+    @include dividerStyle;
   }
 
   .savingplan-header {
-    display: flex;
-    justify-content: space-between;
-
+    @include cardHeader;
     .title {
-      font-size: 20px;
-      font-weight: 700;
+      @include cardTitle;
     }
     span {
       color: $purpleColor;

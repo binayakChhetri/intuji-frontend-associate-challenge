@@ -16,6 +16,7 @@
 .savingplan-card .savingplan-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .savingplan-card .savingplan-header .title {
   font-size: 20px;

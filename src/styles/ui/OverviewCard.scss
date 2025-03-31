@@ -1,10 +1,11 @@
 @import "../variables/variables.scss";
 .overview-card {
   grid-area: item1;
-  background-color: $primaryBg;
   max-width: 717px;
+
   border-radius: 14px;
   padding: 16px;
+  background-color: $primaryBg;
 
   .title {
     font-size: 20px;
@@ -79,12 +80,6 @@
     }
   }
 }
-
-// @media (max-width: 500px) {
-//   .overview-card {
-//     width: 100%;
-//   }
-// }
 
 @media (max-width: 600px) {
   .overview-card {
