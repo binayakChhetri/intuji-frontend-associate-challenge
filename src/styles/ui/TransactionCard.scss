@@ -91,7 +91,7 @@
     max-width: 100%;
   }
 }
-@media (min-width: 1088px) and (max-width: 1250px) {
+@media (max-width: 400px), (min-width: 1088px) and (max-width: 1250px) {
   .transaction-header {
     flex-direction: column;
     gap: 5px;
