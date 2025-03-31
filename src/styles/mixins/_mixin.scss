@@ -9,3 +9,12 @@
   background-color: $color;
   width: $width;
 }
+
+@mixin progressAnimation {
+}
+
+@mixin btnAnimation {
+  background-color: $borderColor;
+  color: #fff;
+  transform: scale(1.1);
+}

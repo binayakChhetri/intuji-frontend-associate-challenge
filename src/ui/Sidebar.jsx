@@ -1,5 +1,4 @@
 import {
-  Image,
   Bolt,
   CalendarDays,
   Info,
@@ -11,6 +10,7 @@ import {
   Users,
 } from "lucide-react";
 import "../styles/ui/Sidebar.css";
+import galleryLogo from "../assets/gallery_logo.svg";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
@@ -101,7 +101,7 @@ export const Sidebar = () => {
   return (
     <aside>
       <div className="logo-container">
-        <Image fill="#d9d9d9" />
+        <img src={galleryLogo} alt="company logo" />
       </div>
       <nav>
         <div className="nav-items">

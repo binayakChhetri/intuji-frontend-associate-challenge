@@ -25,6 +25,10 @@
   color: #4745a4;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.savingplan-card .savingplan-header span:hover {
+  transform: scale(1.05);
 }
 .savingplan-card .savingplan-card-content {
   display: flex;
@@ -73,6 +77,8 @@
 .savingplan-card .savingplan-card-content .content .progress-container .progress-bar {
   border-radius: 5px;
   height: 100%;
+  width: 0%;
+  transition: width 1s ease-out;
 }
 .savingplan-card .savingplan-card-content .bali {
   background-color: #4745a4;

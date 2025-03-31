@@ -1,9 +1,8 @@
-import { Bell, ChevronDown, Image, MessageSquareText } from "lucide-react";
-
 import "../styles/ui/HeaderActions.css";
 import messageIcon from "../assets/message-icon.svg";
 import notificationIcon from "../assets/notification-bell.svg";
 import galleryIcon from "../assets/gallery_logo.svg";
+import arrowDown from "../assets/arrow-down.svg";
 const HeaderActions = () => {
   return (
     <div className="header-actions">
@@ -18,7 +17,7 @@ const HeaderActions = () => {
           <img src={galleryIcon} alt="gallery" />
         </div>
         <span>Mirie Kiritani</span>
-        <ChevronDown />
+        <img src={arrowDown} alt="arrow down" />
       </div>
     </div>
   );

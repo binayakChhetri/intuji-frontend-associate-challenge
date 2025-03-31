@@ -1,4 +1,6 @@
+import { useState } from "react";
 import "../styles/ui/SavingPlanCard.css";
+import { useEffect } from "react";
 
 const contents = [
   {
@@ -30,6 +32,12 @@ const contents = [
 const Card = ({
   content: { name, title, description, totalAmt, savedAmt, savedPercent },
 }) => {
+  const [currentWidth, setCurrentWidth] = useState(0);
+
+  useEffect(() => {
+    setCurrentWidth(savedPercent);
+  }, [savedPercent]);
+
   return (
     <div className="content">
       <div className="content-header">
@@ -46,7 +54,10 @@ const Card = ({
         </div>
       </div>
       <div className="progress-container">
-        <div className={`progress-bar ${name}`}></div>
+        <div
+          className={`progress-bar ${name}`}
+          style={{ width: `${currentWidth}%` }}
+        ></div>
       </div>
     </div>
   );

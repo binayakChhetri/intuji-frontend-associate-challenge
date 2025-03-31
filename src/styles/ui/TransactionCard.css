@@ -25,6 +25,10 @@
   color: #4745a4;
   font-weight: 500;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.transaction-card .transaction-header span:hover {
+  transform: scale(1.05);
 }
 .transaction-card .transaction-content {
   display: flex;

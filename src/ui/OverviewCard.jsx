@@ -14,6 +14,7 @@ import expensesInc from "../assets/expenses_increase.svg";
 
 import income from "../assets/incomes.svg";
 import incomeInc from "../assets/incomes_increase.svg";
+import { useEffect, useState } from "react";
 const contents = [
   {
     title: "Your balance",
@@ -23,7 +24,7 @@ const contents = [
       arrow: arrow_blc,
     },
     description: "15% compared with last month",
-    amount: "$28,891.138",
+    amount: 28891.138,
   },
   {
     title: "Saving",
@@ -33,7 +34,7 @@ const contents = [
       arrow: arrow,
     },
     description: "10% compared with last month",
-    amount: "$1,050.44",
+    amount: 1050.44,
   },
   {
     title: "Expenses",
@@ -43,7 +44,7 @@ const contents = [
       arrow: arrow,
     },
     description: "2% compared with last month",
-    amount: "$200.31",
+    amount: 200.31,
   },
   {
     title: "Incomes",
@@ -53,11 +54,36 @@ const contents = [
       arrow: arrow,
     },
     description: "8% compared with last month",
-    amount: "$21,121.0",
+    amount: 21121.0,
   },
 ];
 
 const Card = ({ content: { title, logo, description, amount } }) => {
+  const [currentAmount, setCurrentAmount] = useState(0);
+  const [isAnimated, setIsAnimated] = useState(false);
+
+  useEffect(() => {
+    const animateAmount = () => {
+      const increment = 60;
+      let current = 0;
+
+      const interval = setInterval(() => {
+        current += increment;
+        if (current >= amount) {
+          clearInterval(interval);
+          current = amount;
+        }
+        setCurrentAmount(current);
+      }, 10);
+
+      return () => clearInterval(interval);
+    };
+
+    if (!isAnimated) {
+      setIsAnimated(true);
+      animateAmount();
+    }
+  }, [amount, isAnimated]);
   return (
     <div
       className={title === "Your balance" ? "content blc-content" : "content"}
@@ -74,7 +100,7 @@ const Card = ({ content: { title, logo, description, amount } }) => {
       </div>
       <hr className="divider" />
       <div className="amount">
-        <p>{amount}</p>
+        <p>$ {currentAmount}</p>
         <img src={logo.arrow} alt="arrow-logo" />
       </div>
     </div>

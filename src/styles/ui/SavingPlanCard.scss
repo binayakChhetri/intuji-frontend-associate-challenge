@@ -29,6 +29,11 @@
       color: $purpleColor;
       font-weight: 500;
       cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 
@@ -84,6 +89,8 @@
         .progress-bar {
           border-radius: 5px;
           height: 100%;
+          width: 0%;
+          transition: width 1s ease-out;
         }
       }
     }

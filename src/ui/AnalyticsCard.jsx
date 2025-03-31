@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 import "../styles/ui/AnalyticsCard.css";
 import label1 from "../assets/label1.svg";
 import label2 from "../assets/label2.svg";
@@ -21,6 +22,44 @@ const data = [
   { label: "Fri", label1: 20000, label2: 7000 },
   { label: "Sat", label1: 17000, label2: 9200 },
 ];
+const AnalyticsCard = () => {
+  return (
+    <div className="analytics-card card">
+      <AnalyticsHeader />
+      <Chart />
+    </div>
+  );
+};
+
+export default AnalyticsCard;
+
+const AnalyticsHeader = () => {
+  return (
+    <div className="analytics-header">
+      <p className="title">Analytics </p>
+      <div className="label-dropdown">
+        <div className="label-container">
+          <div className="label">
+            <img src={label1} alt="label 1" />
+            <span>Label 1</span>
+          </div>
+          <div className="label">
+            <img src={label2} alt="label 2" />
+            <span>Label 2</span>
+          </div>
+        </div>
+        <div className="dropdown-container">
+          <select defaultValue="weekly">
+            <option value="weekly">Weekly</option>
+            <option value="daily">Daily</option>
+            <option value="monthly">Monthly</option>
+            <option value="yearly">Yearly</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  );
+};
 const Chart = () => {
   const [height, setHeight] = useState("80%");
   const handleResize = () => {
@@ -34,11 +73,7 @@ const Chart = () => {
   }, [handleResize]);
 
   return (
-    <ResponsiveContainer
-      width="100%"
-      height={height}
-      className="chart-container"
-    >
+    <ResponsiveContainer width="100%" height={height}>
       <AreaChart
         data={data}
         margin={{
@@ -114,35 +149,3 @@ const Chart = () => {
     </ResponsiveContainer>
   );
 };
-const AnalyticsCard = () => {
-  return (
-    <div className="analytics-card card">
-      <div className="analytics-header">
-        <p className="title">Analytics </p>
-        <div className="label-dropdown">
-          <div className="label-container">
-            <div className="label">
-              <img src={label1} alt="label 1" />
-              <span>Label 1</span>
-            </div>
-            <div className="label">
-              <img src={label2} alt="label 2" />
-              <span>Label 2</span>
-            </div>
-          </div>
-          <div className="dropdown-container">
-            <select defaultValue="weekly">
-              <option value="weekly">Weekly</option>
-              <option value="daily">Daily</option>
-              <option value="monthly">Monthly</option>
-              <option value="yearly">Yearly</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <Chart />
-    </div>
-  );
-};
-
-export default AnalyticsCard;
