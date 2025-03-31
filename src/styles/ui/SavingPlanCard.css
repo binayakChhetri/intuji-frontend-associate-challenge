@@ -94,4 +94,10 @@
 }
 .savingplan-card .savingplan-card-content .saved-percent-charity {
   color: #3bbb6e;
+}
+
+@media (max-width: 950px) {
+  .savingplan-card {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=SavingPlanCard.css.map */

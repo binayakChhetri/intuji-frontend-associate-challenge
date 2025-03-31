@@ -28,6 +28,9 @@
   display: flex;
   align-items: center;
 }
+.header-actions .profile span {
+  width: 100px;
+}
 .header-actions .profile-icon {
   background-color: rgba(0, 0, 0, 0.1254901961);
   box-shadow: inset 0px 0px 0px 1px white;
@@ -44,4 +47,33 @@
 .header-actions .notification-icon,
 .header-actions .profile {
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .header-actions {
+    max-width: 100%;
+  }
+  .header-actions .message-icon,
+  .header-actions .notification-icon,
+  .header-actions .profile-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 400px) {
+  .header-actions {
+    justify-content: space-between;
+  }
+  .header-actions .profile > span {
+    font-size: 14px;
+    width: 80px;
+  }
+  .header-actions .message-icon,
+  .header-actions .notification-icon,
+  .header-actions .profile-icon {
+    border: none;
+  }
+  .header-actions img {
+    width: 20px;
+  }
 }/*# sourceMappingURL=HeaderActions.css.map */

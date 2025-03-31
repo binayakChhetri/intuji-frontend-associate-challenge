@@ -63,7 +63,7 @@ aside nav .divider {
   margin-top: 232px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .nav-title,
   aside > .logo-container {
     display: none;

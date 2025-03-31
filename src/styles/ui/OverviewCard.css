@@ -69,4 +69,13 @@
 }
 .overview-card .blc-content .divider {
   border-top: 1.5px solid rgba(255, 255, 255, 0.1254901961);
+}
+
+@media (max-width: 600px) {
+  .overview-card .overview-card-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 18px;
+  }
 }/*# sourceMappingURL=OverviewCard.css.map */

@@ -68,4 +68,10 @@
 .transaction-card .transaction-content .content .amount-status span {
   font-size: 12px;
   color: #3bbb6e;
+}
+
+@media (max-width: 950px) {
+  .transaction-card {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=TransactionCard.css.map */

@@ -14,7 +14,6 @@
   }
 
   .overview-card-content {
-    // background-color: bisque;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -77,6 +76,23 @@
     }
     .divider {
       border-top: 1.5px solid #ffffff20;
+    }
+  }
+}
+
+// @media (max-width: 500px) {
+//   .overview-card {
+//     width: 100%;
+//   }
+// }
+
+@media (max-width: 600px) {
+  .overview-card {
+    .overview-card-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      gap: 18px;
     }
   }
 }

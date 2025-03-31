@@ -13,8 +13,19 @@
   padding: 32px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .layout-container {
     grid-template-columns: 80px 1fr;
+  }
+  .layout-container main {
+    padding: 20px 16px 16px;
+  }
+}
+@media (max-width: 400px) {
+  .layout-container {
+    grid-template-columns: 70px 1fr;
+  }
+  .layout-container main {
+    padding: 20px 16px 16px;
   }
 }/*# sourceMappingURL=AppLayout.css.map */
