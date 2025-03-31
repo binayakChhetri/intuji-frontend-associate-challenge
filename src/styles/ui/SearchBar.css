@@ -10,6 +10,11 @@
   max-width: 722px;
   height: 64px;
 }
+.search-bar:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  transform: scale(1.01);
+}
 .search-bar .search-icon {
   width: 20px;
   position: absolute;

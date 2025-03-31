@@ -11,8 +11,8 @@ import {
 } from "lucide-react";
 import "../styles/ui/Sidebar.css";
 import galleryLogo from "../assets/gallery_logo.svg";
-import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const sidebarLinks1 = [
   {
@@ -97,12 +97,22 @@ const sidebarLinks3 = [
 ];
 
 export const Sidebar = () => {
-  const [activeLink, setActiveLink] = useState("dashboard");
+  const location = useLocation();
+  const path = location.pathname.split("/")[1];
+  const [activeLink, setActiveLink] = useState("");
+
+  useEffect(() => {
+    if (path) {
+      setActiveLink(path);
+    }
+  }, [path]);
+
   return (
     <aside>
-      <div className="logo-container">
-        <img src={galleryLogo} alt="company logo" />
-      </div>
+      <Link to="/dashboard" className="logo-container">
+        <img src={galleryLogo} alt="company logo" />{" "}
+      </Link>
+
       <nav>
         <div className="nav-items">
           {sidebarLinks1.map((link) => (

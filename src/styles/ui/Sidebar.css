@@ -18,6 +18,10 @@ aside .logo-container {
   align-items: center;
   justify-content: center;
 }
+aside .logo-container:hover {
+  transform: scale(1.01);
+  transition: all 0.2s ease-in-out;
+}
 aside nav {
   display: flex;
   flex-direction: column;
